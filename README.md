@@ -5,7 +5,7 @@
 ## Ferramentas Utilizadas
 <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">Github Copilot VSCode</a></br>
 <a href="https://drive.google.com/file/d/1IqxbV6RK2AwnVLniTHY5V5niQKVoqsNE/edit?pli=1">IA Caseira</a></br>
-<a href="http://asbraap.org//">Site de Pesquisa: ABraAP</a></br>
+<a href="http://asbraap.org//">Site de Pesquisa: AsBraAP</a></br>
 <a href="https://www.aen.pr.gov.br/">Site de Pesquisa: Agencia Estadual de Notícias</a></br>
 <a href="https://www.riobranco.ac.gov.br/">Site de Pesquisa: Prefeitura de Rio Branco</a></br>
 <a href="https://gmaisnoticias.com/">Site de Pesquisa: G+ Notícias</a></br>
@@ -21,4 +21,4 @@
 
 ## Proposito do Site
 
-Informar Sobre a Conexão do Campo e da Cidade, utilizando exemplos de noticias e a associação AsBraap.
+O propósito do site é informar, conectar e engajar pessoas sobre a integração entre o campo e a cidade, destacando notícias relevantes, iniciativas de educação e desenvolvimento, e promovendo a atuação das empresas associadas à ASBRAAP. Buscamos fortalecer a colaboração entre setores urbanos e rurais, valorizando a inovação, a sustentabilidade e o crescimento conjunto, para construir uma sociedade mais consciente e conectada.
