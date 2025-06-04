@@ -1,0 +1,101 @@
+@media screen and (orientation: portrait){
+    .Introdução{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        top: 8vh;
+        padding: 3vw;
+        border-radius: 20px 20px 20px 20px; 
+        background-color: white;
+        color: black;
+        position: relative;
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+        z-index: 1;
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+    }
+    .Texto{
+        align-items: center;
+        justify-content: center;
+    }
+    .Texto-Intro{
+        font-size: 40px;
+        text-align: center;
+        margin: 20px;
+        font-family: "Orbitron", sans-serif;
+        width: 90%;
+    }
+    .Introdução .video1{
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+        align-content: center;
+        
+    }
+    .SubTexto-Intro{
+        
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+        font-family: "Poopins", sans-serif;
+        width: 90%;
+    }
+
+    body.dark-theme .Introdução {
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }   
+}
+@media screen and (orientation: landscape){
+    .Introdução{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        top: 8vh;
+        padding: 3vw;
+        border-radius: 20px 20px 20px 20px; 
+        background-color: white;
+        color: black;
+        position: relative;
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+        z-index: 1;
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+    }
+    .Texto{
+        align-items: center;
+        justify-content: center;
+    }
+    .Texto-Intro{
+        font-size: 40px;
+        text-align: center;
+        margin: 20px;
+        font-family: "Orbitron", sans-serif;
+        width: 90%;
+    }
+    .Introdução .video1{
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+        align-content: center;
+        
+    }
+    .SubTexto-Intro{
+        
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+        font-family: "Poopins", sans-serif;
+        width: 90%;
+    }
+
+    body.dark-theme .Introdução {
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }   
+}
+

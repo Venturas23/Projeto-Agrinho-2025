@@ -1,0 +1,137 @@
+/* Estilo para Celular dos Carrossel de Fotos*/
+@media screen and (orientation: portrait) {
+    .img-Assunto2{
+        /* Durante o tempo definido, a imagem vai ficar parada */
+        --d:20s;
+        margin: 2vh;
+        display: grid;
+        width: 45vw;
+    }
+
+    .img-Assunto2 > img{
+        grid-area: 1/1;
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border: 10px solid #f2f2f2;
+        box-shadow: 0 0 4px #0007;
+        z-index: 2;
+        animation: slide var(--d) infinite, z-order var(--d) infinite steps(1); 
+    }
+    .img-Assunto2 > img:last-child{
+        animation-name: slide, z-order-last;
+    }
+    .img-Assunto2 > img:nth-child(1){
+        animation-delay: calc(var(--d) * 0);
+        --r: 16deg;
+    }
+    .img-Assunto2 > img:nth-child(2){
+        animation-delay: calc(var(--d) * -0.2);
+        --r: -15deg;
+    }
+    .img-Assunto2 > img:nth-child(3){
+        animation-delay: calc(var(--d) * -0.4);
+        --r:-16deg;
+    }
+    .img-Assunto2 > img:nth-child(4){
+        animation-delay: calc(var(--d) * -0.6);
+        --r: -15deg;
+    }
+    .img-Assunto2 > img:nth-child(5){
+        animation-delay: calc(var(--d) * -0.8);
+        --r: 18deg;
+    }
+
+    @keyframes slide {
+        10% {
+            transform: translateX(120%) rotate(var(--r));
+        }
+        0%, 100%, 20% {
+            transform: translateX(0) rotate(var(--r));
+        }
+    }
+    @keyframes z-order {
+        10%, 20% {
+            z-index: 1;
+        }
+        80%{
+            z-index: 2;
+        }
+    }
+    @keyframes z-order-last {
+        10%, 20% {
+            z-index: 1;
+        }
+        90%{
+            z-index: 2;
+        }
+    }
+}
+@media screen and (orientation: landscape) {
+    .img-Assunto2{
+        /* Durante o tempo definido, a imagem vai ficar parada */
+        --d:20s;
+        margin: 8vh;
+        display: grid;
+        width: 30vw;
+    }
+
+    .img-Assunto2 > img{
+        grid-area: 1/1;
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border: 10px solid #f2f2f2;
+        box-shadow: 0 0 4px #0007;
+        z-index: 2;
+        animation: slide var(--d) infinite, z-order var(--d) infinite steps(1); 
+    }
+    .img-Assunto2 > img:last-child{
+        animation-name: slide, z-order-last;
+    }
+    .img-Assunto2 > img:nth-child(1){
+        animation-delay: calc(var(--d) * 0);
+        --r: 16deg;
+    }
+    .img-Assunto2 > img:nth-child(2){
+        animation-delay: calc(var(--d) * -0.2);
+        --r: -15deg;
+    }
+    .img-Assunto2 > img:nth-child(3){
+        animation-delay: calc(var(--d) * -0.4);
+        --r:-16deg;
+    }
+    .img-Assunto2 > img:nth-child(4){
+        animation-delay: calc(var(--d) * -0.6);
+        --r: -15deg;
+    }
+    .img-Assunto2 > img:nth-child(5){
+        animation-delay: calc(var(--d) * -0.8);
+        --r: 18deg;
+    }
+
+    @keyframes slide {
+        10% {
+            transform: translateX(120%) rotate(var(--r));
+        }
+        0%, 100%, 20% {
+            transform: translateX(0) rotate(var(--r));
+        }
+    }
+    @keyframes z-order {
+        10%, 20% {
+            z-index: 1;
+        }
+        80%{
+            z-index: 2;
+        }
+    }
+    @keyframes z-order-last {
+        10%, 20% {
+            z-index: 1;
+        }
+        90%{
+            z-index: 2;
+        }
+    }
+}

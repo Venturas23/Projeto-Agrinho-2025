@@ -1,0 +1,175 @@
+/* Estilo padrão (tema dia) */
+/* Estilo Universal */
+body {
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4dc3ff; /* Azul claro */
+    height: 100vh;
+    display: fixed;
+    position: relative;
+    transition: background-color 0.5s ease-out;
+}
+
+/* Tema noite */
+body.dark-theme {
+    background-color: #1e1e2f; /* Fundo escuro */
+    transition: background-color 0.5s ease-out;
+}
+body.light-theme {
+    background-color: #4dc3ff; /* Azul claro */
+    transition: background-color 0.5s ease-out;
+}
+
+
+.sun {
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    background-color: #ffeb3b; /* Amarelo do sol */
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 0 50px rgba(255, 223, 0, 0.8); /* Brilho do sol */
+    transition: all 0.4s ease-in-out;
+}
+
+body.dark-theme .sun {
+    background-color: #ffffff; /* Lua branca */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Brilho da lua */
+}
+/* Nuvens */
+.nuvem {
+    z-index: -1;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: moveClouds 20s linear infinite;
+}
+
+.nuvem::after {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 100px;
+    height: 80px;
+    top: -30px;
+    left: 20px;
+}
+
+.nuvem.pequena {
+    width: 120px;
+    height: 80px;
+}
+
+.nuvem.grande {
+    width: 200px;
+    height: 120px;
+}
+
+.nuvem:nth-child(1) {
+    top: 50px;
+    left: -200px;
+}
+
+.nuvem:nth-child(2) {
+    top: 150px;
+    left: -300px;
+}
+
+.nuvem:nth-child(3) {
+    top: 250px;
+    left: -100px;
+}
+
+@keyframes moveClouds {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(120vw);
+    }
+}
+
+/* Estrelas */
+.Estrelas {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Coloca as estrelas atrás de todos os outros elementos */
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+}
+
+body.dark-theme .Estrelas {
+    display: block;
+    opacity: 1;
+}
+
+.estrela {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+.estrela:nth-child(1) {
+    top: 50px;
+    left: 30px;
+    animation-delay: 0.5s;
+}
+
+.estrela:nth-child(2) {
+    top: 100px;
+    left: 150px;
+    animation-delay: 1s;
+}
+
+.estrela:nth-child(3) {
+    top: 200px;
+    left: 280px;
+    animation-delay: 0.3s;
+}
+
+.estrela:nth-child(4) {
+    top: 300px;
+    left: 100px;
+    animation-delay: 0.8s;
+}
+
+.estrela:nth-child(5) {
+    top: 400px;
+    left: 50px;
+    animation-delay: 1.2s;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Tamanho normal */
+        box-shadow: 0 0 50px rgba(255, 223, 0, 0.8);
+    }
+    50% {
+        transform: scale(1.1); /* Leve aumento de tamanho */
+        box-shadow: 0 0 70px rgba(255, 223, 0, 1); /* Aumenta o brilho */
+    }
+}   

@@ -1,0 +1,116 @@
+/* Estilo para Celular dos Etapa de Empresa*/
+@media screen and (orientation: portrait){
+    [data-tooltip] {
+        position: relative;
+        font-weight: bold;
+    }
+
+    [data-tooltip]:after {
+        display: none;
+        position: absolute;
+        top: -5px;
+        padding: 5px;
+        border-radius: 3px;
+        left: calc(100% + 2px);
+        content: attr(data-tooltip);
+        white-space: nowrap;
+        background-color: #0095ff;
+        color: White;
+    }
+
+    [data-tooltip]:hover:after {
+    display: block;
+    }
+    .Empresas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    .Empresas-Texto{
+        width: 90%;
+        border-radius: 3vh;
+        padding: 10vh 5vw;
+        background-color: #ffffff;
+        text-align: center;
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        color: black;
+        margin-bottom: 10vh;
+    }
+    body.dark-theme .Empresas-Texto{
+        background-color: black;
+        color: white;
+    }
+    .Site{
+        border-radius: 3vh;
+        padding: 10vh 5vw;
+        background-color: #ffffff;
+        box-shadow: 0 0 50px rgb(167, 167, 167);
+    }
+    body.dark-theme .Site{
+        background-color: black;
+    }
+    .logo-asbraap{
+        width: 60vw;
+    }
+    
+}
+/* Estilo para Celular dos Etapa de Empresa*/
+@media screen and (orientation: landscape){
+    [data-tooltip] {
+        position: relative;
+        font-weight: bold;
+    }
+
+    [data-tooltip]:after {
+        display: none;
+        position: absolute;
+        top: -5px;
+        padding: 5px;
+        border-radius: 3px;
+        left: calc(100% + 2px);
+        content: attr(data-tooltip);
+        white-space: nowrap;
+        background-color: #0095ff;
+        color: White;
+    }
+
+    [data-tooltip]:hover:after {
+    display: block;
+    }
+    .Empresas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    .Empresas-Texto{
+        width: 90%;
+        border-radius: 3vh;
+        padding: 10vh 5vw;
+        background-color: #ffffff;
+        text-align: center;
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        color: black;
+        margin-bottom: 10vh;
+    }
+    body.dark-theme .Empresas-Texto{
+        background-color: black;
+        color: white;
+    }
+    .Site{
+        border-radius: 3vh;
+        padding: 10vh 5vw;
+        background-color: #ffffff;
+        box-shadow: 0 0 50px rgb(167, 167, 167);
+    }
+    body.dark-theme .Site{
+        background-color: black;
+    }
+    .logo-asbraap{
+        width: 60vw;
+    }
+    
+}

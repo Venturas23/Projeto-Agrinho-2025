@@ -1,0 +1,128 @@
+/* Estilo para Celular dos Definição de Texto*/
+@media screen and (orientation: portrait){
+    .Assunto0{
+        display: flex;
+        flex-direction:column;
+        border-radius: 10vw;
+        padding: 30px;
+    }
+    .Texto0, .Texto1, .Texto2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        top: 8vh;
+        padding: 4vw;
+        border-radius: 20px; 
+        background: white;
+        color: black;
+        position: relative;
+        transition: background 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+        z-index: 1;
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        text-align: center;
+        font-family: "Orbitron", sans-serif;
+    }
+    .Texto1{
+        font-size: 20px;
+    }
+    
+    body.dark-theme .Texto0{
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }
+    body.dark-theme .Texto1{
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }
+    body.dark-theme .Texto2{
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }
+    .Texto-Assunto1{
+        font-size: 20px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-family: "Orbitron", sans-serif;
+    }
+    .SubTexto-Assunto1{
+        font-size: 1.5vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-family: "Poopins", sans-serif;
+    }
+    
+    
+    
+}
+/* Estilo para Celular dos Definição de Texto*/
+@media screen and (orientation: landscape){
+    .Assunto0{
+        display: flex;
+        flex-direction:column;
+        border-radius: 10vw;
+        padding: 30px;
+    }
+    .Texto0, .Texto1, .Texto2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        top: 8vh;
+        padding: 4vw;
+        border-radius: 20px; 
+        background: white;
+        color: black;
+        position: relative;
+        transition: background 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+        z-index: 1;
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        text-align: center;
+        font-family: "Orbitron", sans-serif;
+    }
+    .Texto1{
+        font-size: 20px;
+    }
+    
+    body.dark-theme .Texto0{
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }
+    body.dark-theme .Texto1{
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }
+    body.dark-theme .Texto2{
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }
+    .Texto-Assunto1{
+        font-size: 20px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-family: "Orbitron", sans-serif;
+    }
+    .SubTexto-Assunto1{
+        font-size: 1.5vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-family: "Poopins", sans-serif;
+    }
+    
+    
+    
+}

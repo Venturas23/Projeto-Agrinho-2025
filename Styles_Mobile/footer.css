@@ -1,0 +1,161 @@
+/* Estilo para Celular do Pé da Pagina*/
+@media screen and (orientation: portrait) {
+    body{
+        overflow-x: hidden;
+    }
+    .footer{
+        margin-top: 15vh;
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10vh;
+        background-color: white;
+        color: black;
+        width: 100%;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        animation: all 0.7s ease-out;
+        text-align: center;
+    }
+    body.dark-theme .footer{
+        background-color: black;
+        color: white;
+    }
+    .Texto-Footer{
+        margin-bottom: 30px;
+    }
+    .conteudo-footer{
+        justify-content: center;
+        align-items: center;
+    }
+    .Ferramentas-Footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .Ferramentas-Footer p{
+        margin-bottom: 1vh;
+    }
+    .link-footer{
+        text-decoration: none;
+        height: 0;
+        color: black;
+    }
+    body.dark-theme .link-footer{
+        color: white;
+    }
+    .link-footer:hover{
+        text-decoration: underline;
+    }
+    .Redes-Sociais{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        margin-right: 20px;
+    }
+    .Redes-Sociais a{
+        text-decoration: none;
+        color: white;
+    }
+    body.dark-theme .Redes-Sociais a{
+        color: black;
+    }
+    .Icon-Github{
+        margin-right: 1vw;
+    }
+    .Icon-Github svg{
+        color: black;
+        width: 10vw;
+    }
+    .Icon-Project svg{
+        color: black;
+        width: 10vw;
+    }
+    body.dark-theme .Icon-Github svg{
+        color: white;
+    }
+    body.dark-theme .Icon-Project svg{
+        color: white;
+    }
+}
+/* Estilo para Celular do Pé da Pagina*/
+@media screen and (orientation: landscape) {
+    body{
+        overflow-x: hidden;
+    }
+    .footer{
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        background-color: white;
+        color: black;
+        width: 100%;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        animation: all 0.7s ease-out;
+        text-align: center;
+    }
+    body.dark-theme .footer{
+        background-color: black;
+        color: white;
+    }
+    .Texto-Footer{
+        margin-bottom: 30px;
+    }
+    .conteudo-footer{
+        justify-content: center;
+        align-items: center;
+    }
+    .Ferramentas-Footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .Ferramentas-Footer p{
+        margin-bottom: 1vh;
+    }
+    .link-footer{
+        text-decoration: none;
+        height: 0;
+        color: black;
+    }
+    body.dark-theme .link-footer{
+        color: white;
+    }
+    .link-footer:hover{
+        text-decoration: underline;
+    }
+    .Redes-Sociais{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .Redes-Sociais a{
+        text-decoration: none;
+        color: white;
+    }
+    body.dark-theme .Redes-Sociais a{
+        color: black;
+    }
+    .Icon-Github{
+        margin-right: 1vw;
+    }
+    .Icon-Github svg{
+        color: black;
+        width: 7vw;
+    }
+    .Icon-Project svg{
+        color: black;
+        width: 7vw;
+    }
+    body.dark-theme .Icon-Github svg{
+        color: white;
+    }
+    body.dark-theme .Icon-Project svg{
+        color: white;
+    }
+}

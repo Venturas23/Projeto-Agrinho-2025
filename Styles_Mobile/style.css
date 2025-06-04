@@ -1,0 +1,20 @@
+@import url("header.css");
+@import url("background.css");
+@import url("container.css");
+@import url("card.css");
+@import url("Assunto2.css");
+@import url("Empresa.css");
+@import url("footer.css");
+/* Estilo Universal */
+:root{
+    --background-gradient: linear-gradient(220deg, rgba(0, 0, 0, 0), rgba(0, 146, 204, 100));
+    --font-primaria:"Cascadia Mono", sans-serif;
+    --font-segundaria: "Lexend Deca", sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* Ensure no horizontal scrollbar */
+}

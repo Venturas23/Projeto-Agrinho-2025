@@ -1,0 +1,66 @@
+/* Estilo para Celular do Assunto 2 Em Pé*/
+@media screen and (orientation: portrait) {
+    .Assunto1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        top: 8vh;
+        padding: 4vw;
+        border-radius: 20px; 
+        background: white;
+        color: black;
+        position: relative;
+        transition: background 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+        z-index: 1;
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body.dark-theme .Assunto1 {
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }
+
+    .Texto-Assunto2 {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+/* Estilo para Celular do Assunto 2 Deitado*/
+@media screen and (orientation: landscape) {
+    .Assunto1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 120%;
+        top: 8vh;
+        padding: 2vw;
+        border-radius: 20px;
+        background: white;
+        color: black;
+        position: relative;
+        transition: background 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+        z-index: 1;
+        box-shadow: 0 0 50px rgb(167 167 167);
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body.dark-theme .Assunto1 {
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }
+
+    .Texto-Assunto2 {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
