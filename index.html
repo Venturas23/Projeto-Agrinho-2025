@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--MetaDados-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nosso propósito é informar, conectar e engajar pessoas sobre a integração entre o campo e a cidade, destacando notícias relevantes, iniciativas de educação e desenvolvimento, e promovendo a atuação das empresas associadas à ABRAAP. Buscamos fortalecer a colaboração entre setores urbanos e rurais, valorizando a inovação, a sustentabilidade e o crescimento conjunto, para construir uma sociedade mais consciente e conectada.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gabriel da Cruz Ventura">
+    <!--Bibliotecas-->
+        <!-- Arquivos Locais -->
+        <link rel="stylesheet" media="(max-width: 1200px)" href="Styles_Mobile/style.css">
+        <link rel="stylesheet" media="(min-width: 1200px)" href="Styles_Desktop/style.css">
+        <link rel="icon" type="image/x-icon" href="IMG/logo-agrinho.png">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+        
+        <!-- Scroll Reveal -->
+        <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+        <!-- Flickity -->
+        <script src="https://cdn.jsdelivr.net/npm/flickity@3.0.0/dist/flickity.pkgd.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/flickity@3.0.0/css/flickity.min.css" rel="stylesheet">
+    <!--Titulo-->
+    <title>Agrinho 2025</title>
+</head>
+<body>
+    <!-- Plano de Fundo -->
+    <div class="background">
+        <!-- Sol -->
+        <div class="sun"></div>
+
+        <!--Nuvens-->
+        <div class="nuvem pequena"></div>
+        <div class="nuvem grande"></div>
+        <div class="nuvem pequena"></div>
+
+        <!-- Estrelas -->
+        <div class="Estrelas">
+            <div class="estrela"></div>
+            <div class="estrela"></div>
+            <div class="estrela"></div>
+            <div class="estrela"></div>
+            <div class="estrela"></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="Barra-top Efeito" id="Barra-top">
+        <div class="agrinho-programa-logo">
+            <img class="img-agrinho" src="IMG/logo-agrinho.png" alt="Logo do Programa Agrinho">
+        </div>
+        <div class="Toggle-Cotraste">
+            <!-- Interuptor Elementos --> 
+            <label class="switch">
+                <input id="input" type="checkbox" checked="darkTheme"/>
+                <div class="slider round">
+                <div class="sun-moon">
+                    <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+            
+                    <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                    <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+                </div>
+                <div class="stars">
+                    <svg id="star-1" class="star" viewBox="0 0 20 20">
+                    <path
+                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                    ></path>
+                    </svg>
+                    <svg id="star-2" class="star" viewBox="0 0 20 20">
+                    <path
+                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                    ></path>
+                    </svg>
+                    <svg id="star-3" class="star" viewBox="0 0 20 20">
+                    <path
+                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                    ></path>
+                    </svg>
+                    <svg id="star-4" class="star" viewBox="0 0 20 20">
+                    <path
+                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                    ></path>
+                    </svg>
+                </div>
+                </div>
+            </label>
+  
+        </div>
+        <div class="div-menu">
+            <div class="div-button-header" id="div-button-header">
+                <a class="button-top" id="button-top"> 
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Conteudo do Site-->
+    <div class="container">
+        <div class="container-conteudo ">
+            <!-- Introdução -->
+            <div class="Introdução Efeito" tabindex="1">
+                <div class="Texto">
+                    <h1 class="Texto-Intro">FESTEJANDO A CONEXÃO DO CAMPO E DA CIDADE</h1>
+                <p class="SubTexto-Intro">Já parou pra pensar na conexão invisível que liga a galera do campo e da cidade? É essa união que bota comida boa na nossa mesa todo dia!</p>
+                </div>
+                <iframe class="video1" src="https://www.youtube.com/embed/n8RcQM5MIr8?si=hv2pn3mpeaOMOLTi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- Espaçamento -->
+            <div class="Espaçador"></div>
+            <!-- Primeiro Texto -->
+            <div class="Assunto0 Efeito" tabindex="2">
+                <div class="Texto0">
+                    <h2 class="Texto-Assunto0">Tem tanta coisa legal rolando que prova a força dessa ponte! Saca só:
+                    </h2>
+                </div>
+                
+                <div class="Espaçador"></div>
+                <!-- Carrosel -->
+                <div class="Noticia Efeito">
+                    <div class="Card-Noticia"  tabindex="3">
+                            <img class="img-noticia" src="https://www.riobranco.ac.gov.br/wp-content/uploads/2025/05/Reuniao-sobre-Tecnologia-3-e1747347222486.jpeg" alt="Noticia">
+                            <h4 class="Texto-Noticia">Prefeito de Rio Branco participa de reunião sobre tecnologia para impulsionar a agricultura familiar no Acre</h4>
+                            <p class="Subtexto-Noticia">O prefeito de Rio Branco participou de uma reunião para discutir o uso de tecnologia na agricultura familiar, buscando impulsionar a produção rural e fortalecer o setor no Acre.</p>
+                            <a class="Button-Link" href="https://www.riobranco.ac.gov.br/?p=147137" tabindex="4">Ler Notícia</a>
+                        </div>
+                        <div class="Card-Noticia" tabindex="5">
+                            <img class="img-noticia" src="https://www.aen.pr.gov.br/sites/default/arquivos_restritos/files/imagem/2025-05/seti-prime-expoinga_2025_2.jpg" alt="Noticia">
+                            <h4 class="Texto-Noticia">Universidades estaduais apresentam tecnologias para agricultura verde na ExpoInga</h4>
+                            <p class="Subtexto-Noticia">A ExpoInga, que acontece de 3 a 6 de outubro, no Parque de Exposições Ney Braga, em Londrina, é uma vitrine para as inovações do agronegócio. O evento reúne mais de 200 expositores e oferece uma programação diversificada com palestras, workshops e demonstrações práticas.</p>
+                            <a class="Button-Link" href="https://www.aen.pr.gov.br/noticia/universidades-estaduais-apresentam-tecnologias-para-agricultura-verde-na-expoinga" tabindex="6">Ler Notícia</a>
+                        </div>
+                        <div class="Card-Noticia" tabindex="7">
+                            <img class="img-noticia" src="https://gmaisnoticias.com/fotos/7984bfe424d1fe29b8e8393ba347066853e375b2.jpg" alt="Noticia">
+                            <h4 class="Texto-Noticia">Como as tecnologias autônomas aumentam a eficiência na agricultura</h4>
+                            <p class="Subtexto-Noticia">As tecnologias autônomas estão revolucionando a agricultura, aumentando a eficiência e reduzindo custos. Máquinas autônomas, drones e sensores inteligentes estão transformando o setor agrícola.</p>
+                            <a class="Button-Link" href="https://gmaisnoticias.com/como-as-tecnologias-autonomas-aumentam-a-eficiencia-na-agricultura" tabindex="8">Ler Notícia</a>
+                        </div>
+                        
+                </div>
+            </div>
+
+            <!-- Segundo Texto -->
+            <div class="Assunto0 Efeito" tabindex="9">
+                <div class="Texto1">
+                    <h3 class="Texto-Assunto1">A galera do campo e da cidade tá sempre trocando ideia, aprendendo e crescendo junto. É uma troca de saberes que faz a diferença na vida de todo mundo!</h3>
+                </div>
+            </div>
+            <div class="Espaçador"></div>
+            <!-- Noticias -->
+            <div class="Assunto1 Efeito" tabindex="10">
+                <h3 class="Texto-Assunto2">
+                    Existem iniciativas que ensinam para os estudantes nas escolas como o campo e a cidade dependem um do outro, projetos que levam tecnologia de ponta para o agronegócio e até parcerias, como as da FAO com o Brasil, para facilitar o acesso a alimentos de qualidade nas cidades. Sem falar nas ações que aproximam o universo rural de quem vive na cidade.
+                </h3>
+                <div class="img-Assunto2">
+                    <img src="https://images.pexels.com/photos/6509139/pexels-photo-6509139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Intrutor instruindo crianças sobre a estufa">
+                    <img src="https://images.pexels.com/photos/7782158/pexels-photo-7782158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mulher ensinando crianças sobre a Horta">
+                    <img src="https://images.pexels.com/photos/28513538/pexels-photo-28513538/free-photo-of-pai-e-filho-colhendo-pimentoes-em-estufa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pai e filho colhendo pimentões em uma estufa">
+                    <img src="https://images.pexels.com/photos/7782888/pexels-photo-7782888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mulher e menina mexendo na terra">
+                    <img src="https://images.pexels.com/photos/8922635/pexels-photo-8922635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Professora ensinando sobre as frutas">
+                </div>
+            </div>
+            <div class="Espaçador"></div>
+            <!-- Logo da Cooperativa -->
+                <div class="Empresas Efeito">
+                    <div class="Empresas-Texto" tabindex="11">
+                        <h2 class="Texto3">
+                            Empresas que fazem que juntem a tecnologia com o campo.
+                        </h2>
+                    </div>
+                    <div class="Site">
+                        <abbr title="Empresas participantes">
+                            <a href="http://asbraap.org//index.php?page=empresas" tabindex="12">
+                                <img class="logo-asbraap" src="http://asbraap.org//files/logonovo.png" alt="Logo da Associação Brasileira de Agricultura de Precisão e Digital">
+                            </a>
+                        </abbr>
+                    </div>
+                </div>
+            <div class="Espaçador"></div>
+            <!-- Ultimo Texto -->
+            <div class="Assunto2 Efeito" tabindex="13">
+                <div class="Texto2">
+                    <h3 class="Texto-Assunto3">
+                        Essa parceria é O FUTURO pra ter alimentos de qualidade e um planeta mais show e sustentável pra todo mundo!
+                    </h3>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer Efeito">
+        <h3 class="Texto-Footer">Todo o conteudo desse site foi destinado ao evento da Agrinho: Programação</h3>
+        <h3 class="Texto-Footer">Tema: Festejando a Conexão Campo Cidade</h3>
+        <div class="conteudo-footer">
+            <!-- Links das Ferramentas Utilizadas -->
+            <div class="Ferramentas-Footer">
+                <h2 class="Titulo-Ferra-Footer">Ferramentas</h2>
+                <p><a class="link-footer" href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot" tabindex="15">Github Copilot VSCode</a></p>
+                <p><a class="link-footer" href="https://drive.google.com/file/d/1IqxbV6RK2AwnVLniTHY5V5niQKVoqsNE/edit?pli=1" tabindex="15">IA de Pesquisa Utilizado(criada pelo meu pai)</a></p>
+                <p><a class="link-footer" href="http://asbraap.org//" tabindex="15">Site de Pesquisa: ABraAP</a></p>
+                <p><a class="link-footer" href="https://www.aen.pr.gov.br/" tabindex="15">Site de Pesquisa: Agencia Estadual de Notícias</a></p>
+                <p><a class="link-footer" href="https://www.riobranco.ac.gov.br/" tabindex="15">Site de Pesquisa: Prefeitura de Rio Branco</a></p>
+                <p><a class="link-footer" href="https://gmaisnoticias.com/" tabindex="15">Site de Pesquisa: G+ Notícias</a></p>
+                <p><a class="link-footer" href="https://prezi.com/p/rxvu0hgrr1kv/festejando-a-conexao-do-campo-e-da-cidade/" tabindex="15">Documento de Pesquisa: Prezi LUCELIA MOREIRA DA SILVA</a></p>
+                <p><a class="link-footer" href="https://www.youtube.com/@AgroForteBrasilForte" tabindex="15">Canal de Pesquisa: Sistema CNA/Senar</a></p>
+                <p><a class="link-footer" href="https://uiverse.io/" tabindex="15">Modelos de UI: UIverse</a></p>
+                <p><a class="link-footer" href="https://www.pexels.com/pt-br/" tabindex="15">Site das fotos utilizadas: Pexels</a></p>
+                <p><a class="link-footer" href="https://www.alura.com.br/"tabindex="15">Alura</a></p>    
+            </div>
+        </div>
+        <div class="Espaçador"></div>
+        <!-- Botões das Redes Sociais-->
+        <div class="Redes-Sociais">
+            <div>
+                <a class="Icon-Github" href="https://github.com/Venturas23" tabindex="14">
+                    <abbr title="Perfil do Aluno no Github">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" alt="Perfil do Aluno no Github">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                    </abbr>
+                </a>
+                <a class="Icon-Project" href="https://github.com/Venturas23/Projeto-Agrinho-2025" tabindex="14">
+                    <abbr title="Site para visualização do projeto no GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16" alt="Site para visualização do projeto no GitHub">
+                        <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </abbr>
+                </a>
+            </div>
+            <p class="Nome-Criador">Gabriel da Cruz Ventura</p>
+            <p class="Nick">Venturas23</p>
+        </div>
+    </footer>
+</body>
+<!-- Mudar tema da Pagina -->
+<script src="JavaScripts/Contraste.js"></script>
+<!-- Codigo para ativar o Scroll Reveal -->
+<script src="JavaScripts/Animation.js"></script>
+</html>
