@@ -1,0 +1,68 @@
+/* Estilo para PC dos Cartões de Noticias*/
+@media screen and (min-width: 1200px) {
+    .Noticia{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .Card-Noticia{
+        margin: 5vw 2vw 0vw 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1);
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-out;
+    }
+    .Card-Noticia:hover{
+        transform: scale(1.2);
+        transition: all 0.7s ease;
+    }
+    .img-noticia{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .Card-Noticia-Texto{
+        text-align: center;
+        text-decoration: none;
+    }
+
+    body.dark-theme .Card-Noticia {
+        background-color: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: all 0.3s ease-out;
+    }
+    body.dark-theme .Card-Noticia:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px rgb(167, 167, 167); /* Brilho do sol */
+        transition: all 0.7s ease;
+    }
+    .Button-Link{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5vw;
+        transform: scale(1);
+        font-family: "Orbitron", sans-serif;
+        background-color: #00aeff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+    .Button-Link:hover{
+        transform: scale(1.05);
+        background-color: #0088cc;
+        color: white;
+    }
+}

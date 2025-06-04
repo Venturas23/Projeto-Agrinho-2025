@@ -1,0 +1,49 @@
+/* Estilo para PC da Introdução */
+@media screen and (min-width: 1200px) {
+    .Texto-Intro{
+        font-size: 40px;
+        text-align: center;
+        margin: 20px;
+        font-family: "Orbitron", sans-serif;
+        width: 70%;
+    }
+    .Introdução{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        top: 8vh;
+        padding: 4vw;
+        border-radius: 20px 20px 20px 20px; 
+        background: white;
+        color: black;
+        position: relative;
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+        z-index: 1;
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+    }
+    .Introdução .video1{
+        position: relative;
+        right: 0;
+        border-radius: 10px;
+        align-content: center;
+        width:850px;
+        height:315px;        
+    }
+    .SubTexto-Intro{
+        
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+        font-family: "Poopins", sans-serif;
+        width: 70%;
+    }
+
+    body.dark-theme .Introdução {
+        background: black;
+        color: white; /* Brilho do sol */
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        transition: background-color 0.5s ease-out, color 0.5s ease-out, box-shadow 0.5s ease-out;
+    }
+}

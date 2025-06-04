@@ -1,0 +1,22 @@
+@import url("Introdução.css");
+@import url("Definição.css");
+@import url("Carrosel2.css");
+
+/* Estilo Universal*/
+.container-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body.dark-theme .container-conteudo {
+    color: white; /* Brilho do sol */
+}
+.container{
+    justify-content: center;
+    align-items: center;
+}
+.Espaçador{
+    width: 1px;
+    height: 10vh;
+}

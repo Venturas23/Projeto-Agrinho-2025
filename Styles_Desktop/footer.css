@@ -1,0 +1,81 @@
+/* Estilo para PC do Pé da Pagina*/
+@media screen and (min-width: 1200px) {
+    .footer{
+        margin-top: 15vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        background-color: white;
+        color: black;
+        width: 100vw;
+        right: 0;
+        animation: all 0.7s ease-out;
+    }
+    body.dark-theme .footer{
+        background-color: black;
+        color: white;
+    }
+    .Texto-Footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .Ferramentas-Footer{
+        display: flex;
+        flex-direction: column;
+        margin-right: 40vw;
+        margin-left: 20vw;
+    }
+    .Ferramentas-Footer p{
+        margin-bottom: 0;
+    }
+    .link-footer{
+        text-decoration: none;
+        height: 0;
+        color: black;
+    }
+    body.dark-theme .link-footer{
+        color: white;
+    }
+    .link-footer:hover{
+        text-decoration: underline;
+    }
+    .Icon-Github{
+        margin-right: 1vw;
+    }
+    .Icon-Github svg{
+        color: black;
+        width: 3vw;
+    }
+    .Icon-Project svg{
+        color: black;
+        width: 3vw;
+    }
+    body.dark-theme .Icon-Github svg{
+        color: white;
+    }
+    body.dark-theme .Icon-Project svg{
+        color: white;
+    }
+    .Redes-Sociais{
+        position: absolute;
+            right: 0px;
+            display: flex;
+            bottom: 0px;
+            margin: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+    }
+    .Redes-Sociais a{
+        text-decoration: none;
+        color: white;
+    }
+    body.dark-theme .Redes-Sociais a{
+        color: black;
+    }
+}

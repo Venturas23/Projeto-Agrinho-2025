@@ -1,0 +1,57 @@
+/* Estilo para PC dos Etapa de Empresa*/
+@media screen and (min-width: 1200px) {
+    [data-tooltip] {
+        position: relative;
+        font-weight: bold;
+    }
+
+    [data-tooltip]:after {
+    display: none;
+    position: absolute;
+    top: -5px;
+    padding: 5px;
+    border-radius: 3px;
+    left: calc(100% + 2px);
+    content: attr(data-tooltip);
+    white-space: nowrap;
+    background-color: #0095ff;
+    color: White;
+    }
+
+    [data-tooltip]:hover:after {
+    display: block;
+    }
+    .Empresas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    .Empresas-Texto{
+        width: 60%;
+        border-radius: 3vh;
+        padding: 10vh 5vw;
+        background-color: #ffffff;
+        margin-right: 5vw;
+        text-align: center;
+        box-shadow: 0 0 50px rgb(167, 167, 167); /* Brilho do sol */
+        color: black;
+    }
+    body.dark-theme .Empresas-Texto{
+        background-color: black;
+        color: white;
+    }
+    .Site{
+        border-radius: 3vh;
+        padding: 10vh 5vw;
+        background-color: #ffffff;
+        box-shadow: 0 0 50px rgb(167, 167, 167);
+    }
+    body.dark-theme .Site{
+        background-color: black;
+    }
+    .logo-asbraap{
+        width: 30vw;
+    }
+}
