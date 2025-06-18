@@ -22,7 +22,7 @@ Descendo a pagina tem um container de noticias, Que é possivel a interação do
 
 Descendo mais um pouco a pagina, temos algumas informações sobre a "Conexão Campo Cidade" e algumas empresas que participam dessa conexão;
 
-<img src="README/VID/video3.gif">
+<img src="README/VID/Video3.gif">
 
 No pé da pagina temos as ferramentas utilizadas no projeto e o perfil do aluno no Github e a pagina do projeto;
 
